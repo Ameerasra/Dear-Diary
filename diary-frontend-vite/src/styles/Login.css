@@ -3,16 +3,29 @@
 @tailwind utilities;
 
 .login-container {
-  @apply flex min-h-screen bg-[url('/src/assets/bg.jpg')];
+  @apply flex flex-col min-h-screen bg-[url('/src/assets/bg.jpg')] bg-cover bg-center bg-no-repeat relative;
 }
 
+.login-container nav {
+  @apply w-full;
+}
 
 .login-main {
-  @apply w-full md:w-2/3 p-6 flex items-center justify-center;
+  @apply w-full md:w-2/3 p-6 flex items-center justify-center mt-24;
+}
+
+.dashboard-main {
+  @apply w-full flex items-center justify-center;
+  padding: 10px;
 }
 
 .login-card {
   @apply bg-white rounded-xl shadow-2xl p-6 w-full max-w-md;
+}
+
+.dashboard-card {
+  @apply max-w-full;
+  margin: 10px;
 }
 
 .login-heading {
